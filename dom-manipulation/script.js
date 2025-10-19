@@ -1,10 +1,10 @@
 
 
-// Top of script.js
-localStorage.setItem("quotesInit", JSON.stringify([]));
-localStorage.removeItem("quotesInit");
+// // Top of script.js
+// localStorage.setItem("quotesInit", JSON.stringify([]));
+// localStorage.removeItem("quotesInit");
 
-document.addEventListener("DOMContentLoaded", function () {
+
   // Load quote from local storage or use default ones
   let quotes = JSON.parse(localStorage.getItem("quotes")) || [
     { text: "Consistency is the key to success", category: "Motivation" },
@@ -365,6 +365,3 @@ document.addEventListener("DOMContentLoaded", function () {
       notification.remove();
     }, 3000);
   }
-
-
-});
